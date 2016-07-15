@@ -1,30 +1,43 @@
 <!DOCTYPE html>
 
+
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,200,600,300italic,200italic,400italic,700,600italic,900' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css/normalize.css/normalize.css">
-    <link rel="stylesheet" href="css/main.css">
-    <title>Hello World</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://github.com/kswedberg/jquery-smooth-scroll/blob/master/jquery.smooth-scroll.min.js"></script>
+    <script>
+    $('.smooth').on('click', function() {
+        $.smoothScroll({
+            scrollElement: $('body'),
+            scrollTarget: '#' + this.id
+        });
+
+        return false;
+    });
+    </script>
   </head>
-
   <body>
+    <!-- Navigation -->
+    <nav>
+      <ul>
+        <li><a href="#resume">See My Resume</a></li>
+        <li><a href="#work">See My Work</a></li>
+        <li><a href="#">I'm on Twitter!</a></li>
+      </ul>
+    </nav>
 
-          <a href="about.html">
-            <h1 class="post-title font middle">OLIVIA ROSS</h1>
-          </a>
+    <div id="part1">
+      <a id="resume" class="smooth"></a>
+      Resume download link/content for resume goes here!
+    </div>
 
-          <div class= "blurb font middle">
-            <a href"#">home</a>
-            <a href="about.html">about</a>
-            <a href="works.html">works</a>
-            <a href="http://www.github.com/oliviaiscool">github</a>
-         </div>
+    <div id="part2">
+      <a id="work" class="smooth"></a>
+      Work you've done/doing goes here!
+    </div>
 
-              <span id="picture"><img alt="picture of me" src="me.png" class="middle round"></span>
-                  <!-- <div class="line middle"></div> -->
-              <p class="blurb font">I'm a highschool freshman with a passion for making cool stuff. Whether speaking at a conference or working on a new programming project-- I'm always up to something, but you can catch up with me by checking any of the links above! </p>
   </body>
+
 
 </html>
