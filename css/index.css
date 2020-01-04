@@ -1,27 +1,84 @@
 body {
-  font-family: Arial, sans-serif;
-  text-align: center;
-  font-size: 16px;
-  color: #222;
-}
+    font-family: 'Times New Roman', Times, serif, serif;
+    font-size: 24px;
+    color: oldlace;
+    background-color: darkred;
+  }
 
-h1 {
-  font-family:  Arial, sans-serif;
-  font-size: 25px;
-  text-align: center;
-  font-weight: 100;
-  color: #222;
-}
+  #content {
+    padding-right: 35%;
+    padding-left: 2%;
+    padding-top: 4%;
+  }
 
-#front-page {
-  text-align: center;
-}
+  #cv {
+    font-size: 20px;
+   
+  }
 
-ul {
-  text-decoration: none;
-  list-style: none;
-}
+  #links {
+    background: maroon;
+    padding: .2em !important;
+    border: 1px solid palevioletred;
+  }
 
-li :hover {
-  font-style: italic;
-}
+  #activated {
+    background: mediumvioletred !important;
+    padding: .2em !important;
+    border: 1px solid palevioletred;
+  }
+
+  #newsletter {
+    background:  coral;
+    padding: .2em !important;
+    position: fixed;
+    top: 90%;
+    left: 2.5%;
+    border: 1px solid palevioletred;
+    width: 32%;
+  }
+
+  a:hover {
+    color: oldlace;
+    text-decoration: none;
+    background:  crimson !important;
+
+  }
+
+  img, video {
+    border:1px solid palevioletred;
+  }
+
+  a:link, a:visited {
+      color: oldlace;
+      text-decoration: none;
+  }
+
+  #social {
+    color: palevioletred;
+  }
+
+  #girls {
+      position: fixed;
+      top: 28%;
+      left: 33%;
+      opacity: 0.5;
+      z-index: -10;
+
+      border:1px solid palevioletred;
+      height: 60%;
+      width: 60%;
+
+  }
+
+  #grace {
+    position: fixed;
+    top: 65%;
+    left: 65%;
+    opacity: 0.5;
+    z-index: -10;
+
+    border:1px solid palevioletred;
+    height: 30%;
+    width: 30%;
+  }
