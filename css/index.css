@@ -35,7 +35,7 @@ body {
     top: 90%;
     left: 2.5%;
     border: 1px solid palevioletred;
-    width: 32%;
+    width: max-width;
   }
 
   a:hover {
